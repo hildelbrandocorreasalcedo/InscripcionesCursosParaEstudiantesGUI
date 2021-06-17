@@ -31,8 +31,8 @@ namespace Design_Dashboard_Modern
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuHotel));
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.MenuSidebar = new System.Windows.Forms.PictureBox();
@@ -47,12 +47,6 @@ namespace Design_Dashboard_Modern
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.PanelSideMenu = new System.Windows.Forms.Panel();
-            this.BtGenerarFactura = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.BtServiciosAlimentarios = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.BtHabitaciones = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.PanelConsultarGanancias = new System.Windows.Forms.Panel();
-            this.BtConsultarGanancias = new System.Windows.Forms.Button();
-            this.BtGestionarGanancias = new System.Windows.Forms.Button();
             this.BtIngrGast = new Bunifu.Framework.UI.BunifuFlatButton();
             this.BtReservas = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelSubPensionados = new System.Windows.Forms.Panel();
@@ -84,7 +78,6 @@ namespace Design_Dashboard_Modern
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.Sidebar.SuspendLayout();
             this.PanelSideMenu.SuspendLayout();
-            this.PanelConsultarGanancias.SuspendLayout();
             this.panelSubPensionados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SidebarWrapper.SuspendLayout();
@@ -301,10 +294,6 @@ namespace Design_Dashboard_Modern
             // 
             this.PanelSideMenu.AutoScroll = true;
             this.PanelSideMenu.BackColor = System.Drawing.Color.Transparent;
-            this.PanelSideMenu.Controls.Add(this.BtGenerarFactura);
-            this.PanelSideMenu.Controls.Add(this.BtServiciosAlimentarios);
-            this.PanelSideMenu.Controls.Add(this.BtHabitaciones);
-            this.PanelSideMenu.Controls.Add(this.PanelConsultarGanancias);
             this.PanelSideMenu.Controls.Add(this.BtIngrGast);
             this.PanelSideMenu.Controls.Add(this.BtReservas);
             this.PanelSideMenu.Controls.Add(this.panelSubPensionados);
@@ -314,172 +303,6 @@ namespace Design_Dashboard_Modern
             this.PanelSideMenu.Name = "PanelSideMenu";
             this.PanelSideMenu.Size = new System.Drawing.Size(245, 418);
             this.PanelSideMenu.TabIndex = 2;
-            // 
-            // BtGenerarFactura
-            // 
-            this.BtGenerarFactura.Activecolor = System.Drawing.Color.Transparent;
-            this.BtGenerarFactura.BackColor = System.Drawing.Color.Transparent;
-            this.BtGenerarFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtGenerarFactura.BorderRadius = 0;
-            this.BtGenerarFactura.ButtonText = "          NO FUNCIONA";
-            this.BtGenerarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebarBack.SetDecoration(this.BtGenerarFactura, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.BtGenerarFactura, BunifuAnimatorNS.DecorationType.None);
-            this.BtGenerarFactura.DisabledColor = System.Drawing.Color.Gray;
-            this.BtGenerarFactura.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtGenerarFactura.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtGenerarFactura.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtGenerarFactura.Iconimage")));
-            this.BtGenerarFactura.Iconimage_right = null;
-            this.BtGenerarFactura.Iconimage_right_Selected = null;
-            this.BtGenerarFactura.Iconimage_Selected = null;
-            this.BtGenerarFactura.IconMarginLeft = 13;
-            this.BtGenerarFactura.IconMarginRight = 0;
-            this.BtGenerarFactura.IconRightVisible = true;
-            this.BtGenerarFactura.IconRightZoom = 0D;
-            this.BtGenerarFactura.IconVisible = true;
-            this.BtGenerarFactura.IconZoom = 60D;
-            this.BtGenerarFactura.IsTab = false;
-            this.BtGenerarFactura.Location = new System.Drawing.Point(0, 370);
-            this.BtGenerarFactura.Margin = new System.Windows.Forms.Padding(6);
-            this.BtGenerarFactura.Name = "BtGenerarFactura";
-            this.BtGenerarFactura.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtGenerarFactura.OnHovercolor = System.Drawing.Color.Blue;
-            this.BtGenerarFactura.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtGenerarFactura.selected = false;
-            this.BtGenerarFactura.Size = new System.Drawing.Size(245, 46);
-            this.BtGenerarFactura.TabIndex = 22;
-            this.BtGenerarFactura.Text = "          NO FUNCIONA";
-            this.BtGenerarFactura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtGenerarFactura.Textcolor = System.Drawing.Color.LightGray;
-            this.BtGenerarFactura.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.BtGenerarFactura.Click += new System.EventHandler(this.BtGenerarFactura_Click);
-            // 
-            // BtServiciosAlimentarios
-            // 
-            this.BtServiciosAlimentarios.Activecolor = System.Drawing.Color.Transparent;
-            this.BtServiciosAlimentarios.BackColor = System.Drawing.Color.Transparent;
-            this.BtServiciosAlimentarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtServiciosAlimentarios.BorderRadius = 0;
-            this.BtServiciosAlimentarios.ButtonText = "       NO FUNCIONA";
-            this.BtServiciosAlimentarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebarBack.SetDecoration(this.BtServiciosAlimentarios, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.BtServiciosAlimentarios, BunifuAnimatorNS.DecorationType.None);
-            this.BtServiciosAlimentarios.DisabledColor = System.Drawing.Color.Gray;
-            this.BtServiciosAlimentarios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtServiciosAlimentarios.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtServiciosAlimentarios.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtServiciosAlimentarios.Iconimage")));
-            this.BtServiciosAlimentarios.Iconimage_right = null;
-            this.BtServiciosAlimentarios.Iconimage_right_Selected = null;
-            this.BtServiciosAlimentarios.Iconimage_Selected = null;
-            this.BtServiciosAlimentarios.IconMarginLeft = 4;
-            this.BtServiciosAlimentarios.IconMarginRight = 0;
-            this.BtServiciosAlimentarios.IconRightVisible = true;
-            this.BtServiciosAlimentarios.IconRightZoom = 0D;
-            this.BtServiciosAlimentarios.IconVisible = true;
-            this.BtServiciosAlimentarios.IconZoom = 100D;
-            this.BtServiciosAlimentarios.IsTab = false;
-            this.BtServiciosAlimentarios.Location = new System.Drawing.Point(0, 326);
-            this.BtServiciosAlimentarios.Name = "BtServiciosAlimentarios";
-            this.BtServiciosAlimentarios.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtServiciosAlimentarios.OnHovercolor = System.Drawing.Color.Blue;
-            this.BtServiciosAlimentarios.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtServiciosAlimentarios.selected = false;
-            this.BtServiciosAlimentarios.Size = new System.Drawing.Size(245, 44);
-            this.BtServiciosAlimentarios.TabIndex = 23;
-            this.BtServiciosAlimentarios.Text = "       NO FUNCIONA";
-            this.BtServiciosAlimentarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtServiciosAlimentarios.Textcolor = System.Drawing.Color.LightGray;
-            this.BtServiciosAlimentarios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.BtServiciosAlimentarios.Click += new System.EventHandler(this.BtServiciosAlimentarios_Click);
-            // 
-            // BtHabitaciones
-            // 
-            this.BtHabitaciones.Activecolor = System.Drawing.Color.Transparent;
-            this.BtHabitaciones.BackColor = System.Drawing.Color.Transparent;
-            this.BtHabitaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtHabitaciones.BorderRadius = 0;
-            this.BtHabitaciones.ButtonText = "          NO FUNCIONA";
-            this.BtHabitaciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimacionSidebarBack.SetDecoration(this.BtHabitaciones, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.BtHabitaciones, BunifuAnimatorNS.DecorationType.None);
-            this.BtHabitaciones.DisabledColor = System.Drawing.Color.Gray;
-            this.BtHabitaciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtHabitaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtHabitaciones.ForeColor = System.Drawing.Color.Navy;
-            this.BtHabitaciones.Iconcolor = System.Drawing.Color.Transparent;
-            this.BtHabitaciones.Iconimage = ((System.Drawing.Image)(resources.GetObject("BtHabitaciones.Iconimage")));
-            this.BtHabitaciones.Iconimage_right = null;
-            this.BtHabitaciones.Iconimage_right_Selected = null;
-            this.BtHabitaciones.Iconimage_Selected = null;
-            this.BtHabitaciones.IconMarginLeft = 14;
-            this.BtHabitaciones.IconMarginRight = 0;
-            this.BtHabitaciones.IconRightVisible = true;
-            this.BtHabitaciones.IconRightZoom = 0D;
-            this.BtHabitaciones.IconVisible = true;
-            this.BtHabitaciones.IconZoom = 60D;
-            this.BtHabitaciones.IsTab = false;
-            this.BtHabitaciones.Location = new System.Drawing.Point(0, 280);
-            this.BtHabitaciones.Name = "BtHabitaciones";
-            this.BtHabitaciones.Normalcolor = System.Drawing.Color.Transparent;
-            this.BtHabitaciones.OnHovercolor = System.Drawing.Color.Blue;
-            this.BtHabitaciones.OnHoverTextColor = System.Drawing.Color.White;
-            this.BtHabitaciones.selected = false;
-            this.BtHabitaciones.Size = new System.Drawing.Size(245, 46);
-            this.BtHabitaciones.TabIndex = 21;
-            this.BtHabitaciones.Text = "          NO FUNCIONA";
-            this.BtHabitaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtHabitaciones.Textcolor = System.Drawing.Color.LightGray;
-            this.BtHabitaciones.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.BtHabitaciones.Click += new System.EventHandler(this.BtHabitaciones_Click);
-            // 
-            // PanelConsultarGanancias
-            // 
-            this.PanelConsultarGanancias.BackColor = System.Drawing.Color.Transparent;
-            this.PanelConsultarGanancias.Controls.Add(this.BtConsultarGanancias);
-            this.PanelConsultarGanancias.Controls.Add(this.BtGestionarGanancias);
-            this.AnimacionSidebar.SetDecoration(this.PanelConsultarGanancias, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebarBack.SetDecoration(this.PanelConsultarGanancias, BunifuAnimatorNS.DecorationType.None);
-            this.PanelConsultarGanancias.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelConsultarGanancias.Location = new System.Drawing.Point(0, 180);
-            this.PanelConsultarGanancias.Name = "PanelConsultarGanancias";
-            this.PanelConsultarGanancias.Size = new System.Drawing.Size(245, 100);
-            this.PanelConsultarGanancias.TabIndex = 15;
-            // 
-            // BtConsultarGanancias
-            // 
-            this.BtConsultarGanancias.BackColor = System.Drawing.Color.Transparent;
-            this.AnimacionSidebarBack.SetDecoration(this.BtConsultarGanancias, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.BtConsultarGanancias, BunifuAnimatorNS.DecorationType.None);
-            this.BtConsultarGanancias.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtConsultarGanancias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtConsultarGanancias.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtConsultarGanancias.Image = ((System.Drawing.Image)(resources.GetObject("BtConsultarGanancias.Image")));
-            this.BtConsultarGanancias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtConsultarGanancias.Location = new System.Drawing.Point(0, 45);
-            this.BtConsultarGanancias.Name = "BtConsultarGanancias";
-            this.BtConsultarGanancias.Size = new System.Drawing.Size(245, 46);
-            this.BtConsultarGanancias.TabIndex = 16;
-            this.BtConsultarGanancias.Text = "              CONSULTAR GANANCIAS";
-            this.BtConsultarGanancias.UseVisualStyleBackColor = false;
-            this.BtConsultarGanancias.Click += new System.EventHandler(this.BtConsultarGanancias_Click);
-            // 
-            // BtGestionarGanancias
-            // 
-            this.BtGestionarGanancias.BackColor = System.Drawing.Color.Transparent;
-            this.AnimacionSidebarBack.SetDecoration(this.BtGestionarGanancias, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.BtGestionarGanancias, BunifuAnimatorNS.DecorationType.None);
-            this.BtGestionarGanancias.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtGestionarGanancias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtGestionarGanancias.ForeColor = System.Drawing.SystemColors.Control;
-            this.BtGestionarGanancias.Image = ((System.Drawing.Image)(resources.GetObject("BtGestionarGanancias.Image")));
-            this.BtGestionarGanancias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtGestionarGanancias.Location = new System.Drawing.Point(0, 0);
-            this.BtGestionarGanancias.Name = "BtGestionarGanancias";
-            this.BtGestionarGanancias.Size = new System.Drawing.Size(245, 45);
-            this.BtGestionarGanancias.TabIndex = 15;
-            this.BtGestionarGanancias.Text = "             GESTION DE GANANCIAS";
-            this.BtGestionarGanancias.UseVisualStyleBackColor = false;
-            this.BtGestionarGanancias.Click += new System.EventHandler(this.BtGestionarGanancias_Click);
             // 
             // BtIngrGast
             // 
@@ -526,7 +349,7 @@ namespace Design_Dashboard_Modern
             this.BtReservas.BackColor = System.Drawing.Color.Transparent;
             this.BtReservas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtReservas.BorderRadius = 0;
-            this.BtReservas.ButtonText = "         RESERVAS";
+            this.BtReservas.ButtonText = "         REGISTRO CURSOS";
             this.BtReservas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebarBack.SetDecoration(this.BtReservas, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.BtReservas, BunifuAnimatorNS.DecorationType.None);
@@ -554,7 +377,7 @@ namespace Design_Dashboard_Modern
             this.BtReservas.selected = false;
             this.BtReservas.Size = new System.Drawing.Size(245, 46);
             this.BtReservas.TabIndex = 18;
-            this.BtReservas.Text = "         RESERVAS";
+            this.BtReservas.Text = "         REGISTRO CURSOS";
             this.BtReservas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtReservas.Textcolor = System.Drawing.Color.LightGray;
             this.BtReservas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -586,7 +409,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarPensionado.Name = "BtConsultarPensionado";
             this.BtConsultarPensionado.Size = new System.Drawing.Size(245, 42);
             this.BtConsultarPensionado.TabIndex = 3;
-            this.BtConsultarPensionado.Text = "                  CONSULTAR PENCIONADOS";
+            this.BtConsultarPensionado.Text = "                PRE-RESGISTRO CURSOS";
             this.BtConsultarPensionado.UseVisualStyleBackColor = false;
             this.BtConsultarPensionado.Click += new System.EventHandler(this.BtConsultarPensionado_Click);
             // 
@@ -603,7 +426,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarPencionado.Name = "BtRegistrarPencionado";
             this.BtRegistrarPencionado.Size = new System.Drawing.Size(245, 43);
             this.BtRegistrarPencionado.TabIndex = 2;
-            this.BtRegistrarPencionado.Text = "             REGISTRAR PENSIONADO";
+            this.BtRegistrarPencionado.Text = "             CONSULTA ESTUDIANTE";
             this.BtRegistrarPencionado.UseVisualStyleBackColor = true;
             this.BtRegistrarPencionado.Click += new System.EventHandler(this.BtRegistrarPencionado_Click);
             // 
@@ -613,7 +436,7 @@ namespace Design_Dashboard_Modern
             this.BTPensionados.BackColor = System.Drawing.Color.Transparent;
             this.BTPensionados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BTPensionados.BorderRadius = 0;
-            this.BTPensionados.ButtonText = "        PENSIONADOS";
+            this.BTPensionados.ButtonText = "        ESTUDIANTE";
             this.BTPensionados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebarBack.SetDecoration(this.BTPensionados, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.BTPensionados, BunifuAnimatorNS.DecorationType.None);
@@ -640,7 +463,7 @@ namespace Design_Dashboard_Modern
             this.BTPensionados.selected = false;
             this.BTPensionados.Size = new System.Drawing.Size(244, 46);
             this.BTPensionados.TabIndex = 20;
-            this.BTPensionados.Text = "        PENSIONADOS";
+            this.BTPensionados.Text = "        ESTUDIANTE";
             this.BTPensionados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTPensionados.Textcolor = System.Drawing.Color.LightGray;
             this.BTPensionados.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -741,43 +564,43 @@ namespace Design_Dashboard_Modern
             // 
             this.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarBack.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.AnimacionSidebarBack.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.AnimacionSidebarBack.DefaultAnimation = animation4;
             // 
             // AnimacionSidebar
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.AnimacionSidebar.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 1;
-            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 2F;
-            animation2.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation2;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 1;
+            animation3.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 2F;
+            animation3.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation3;
             // 
             // MenuHotel
             // 
@@ -806,7 +629,6 @@ namespace Design_Dashboard_Modern
             this.Sidebar.ResumeLayout(false);
             this.Sidebar.PerformLayout();
             this.PanelSideMenu.ResumeLayout(false);
-            this.PanelConsultarGanancias.ResumeLayout(false);
             this.panelSubPensionados.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.SidebarWrapper.ResumeLayout(false);
@@ -832,12 +654,6 @@ namespace Design_Dashboard_Modern
         private Bunifu.Framework.UI.BunifuGradientPanel Sidebar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel PanelSideMenu;
-        private Bunifu.Framework.UI.BunifuFlatButton BtGenerarFactura;
-        private Bunifu.Framework.UI.BunifuFlatButton BtServiciosAlimentarios;
-        private Bunifu.Framework.UI.BunifuFlatButton BtHabitaciones;
-        private System.Windows.Forms.Panel PanelConsultarGanancias;
-        private System.Windows.Forms.Button BtConsultarGanancias;
-        private System.Windows.Forms.Button BtGestionarGanancias;
         private Bunifu.Framework.UI.BunifuFlatButton BtIngrGast;
         private Bunifu.Framework.UI.BunifuFlatButton BtReservas;
         private System.Windows.Forms.Panel panelSubPensionados;

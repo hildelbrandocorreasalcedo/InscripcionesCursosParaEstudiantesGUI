@@ -23,16 +23,13 @@ namespace Design_Dashboard_Modern
         {
             panelSubPensionados.Visible = false;
 
-            PanelConsultarGanancias.Visible = false;
+            
 
         }
         private void HideSubMenu()
         {
             if (panelSubPensionados.Visible == true)
                 panelSubPensionados.Visible = false;
-
-            if (PanelConsultarGanancias.Visible == true)
-                PanelConsultarGanancias.Visible = false;
 
         }
 
@@ -103,28 +100,28 @@ namespace Design_Dashboard_Modern
 
         private void BtRegistrarPencionado_Click(object sender, EventArgs e)
         {
-            openChildForm(new RegistroPensionado());
+            openChildForm(new ConsultarEstudiante());
             
         }
 
         private void BtConsultarPensionado_Click(object sender, EventArgs e)
         {
-            openChildForm(new ConsultaModPensionado());
+            openChildForm(new PreRegistroCursos());
         }
 
         private void BtReservas_Click(object sender, EventArgs e)
         {
-            openChildForm(new Reserva());
+            openChildForm(new RegistroCursos());
         }
 
         private void BtIngrGast_Click(object sender, EventArgs e)
         {
-            showSubMenu(PanelConsultarGanancias);
+            openChildForm(new Cambio());
         }
 
         private void BtConsultarGanancias_Click(object sender, EventArgs e)
         {
-            openChildForm(new ConsultarGanancias());
+            openChildForm(new PreRegistroCursos());
         }
 
         private void BtGestionarGanancias_Click(object sender, EventArgs e)

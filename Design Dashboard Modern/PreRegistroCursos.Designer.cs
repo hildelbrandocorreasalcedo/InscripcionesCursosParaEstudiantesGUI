@@ -1,7 +1,7 @@
 ﻿
 namespace Design_Dashboard_Modern
 {
-    partial class ConsultarGanancias
+    partial class PreRegistroCursos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Design_Dashboard_Modern
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultarGanancias));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreRegistroCursos));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.BtCancelarGanancias = new System.Windows.Forms.Button();

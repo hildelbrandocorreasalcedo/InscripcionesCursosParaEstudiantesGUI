@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Design_Dashboard_Modern
 {
-    public partial class ConsultarGanancias : Form
+    public partial class PreRegistroCursos : Form
     {
-        public ConsultarGanancias()
+        public PreRegistroCursos()
         {
             InitializeComponent();
         }

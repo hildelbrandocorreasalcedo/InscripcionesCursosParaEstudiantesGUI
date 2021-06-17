@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Design_Dashboard_Modern
 {
-    public partial class Reserva : Form
+    public partial class ConsultarEstudiante : Form
     {
-        public Reserva()
+        public ConsultarEstudiante()
         {
             InitializeComponent();
         }

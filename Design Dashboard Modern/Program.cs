@@ -1,4 +1,5 @@
 ﻿using Design_Dashboard_Modern;
+using System.IO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,15 @@ namespace ProyectoHotelPensionados
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run (new MenuHotel());
+            if (File.Exists("Estudiante.txt"))
+            {
+                Application.Run(new MenuHotel());
+            }
+            else
+            {
+                MessageBox.Show("No es posible realizar las votaciones porque no existen estudiantes cargados");
+                Application.Exit();
+            }
         }
     }
 }

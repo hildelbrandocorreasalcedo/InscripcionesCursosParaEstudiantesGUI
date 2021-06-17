@@ -1,7 +1,7 @@
 ﻿
 namespace Design_Dashboard_Modern
 {
-    partial class RegistroPensionado
+    partial class RegistroCursos
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Design_Dashboard_Modern
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroPensionado));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroCursos));
             this.TxtIdentificacion = new System.Windows.Forms.TextBox();
             this.labNombre = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
