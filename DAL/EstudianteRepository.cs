@@ -47,7 +47,7 @@ namespace DAL
             estudiante.Identificacion = matrizEstudiante[0];
             estudiante.Nombre = matrizEstudiante[1];
             estudiante.Estado = matrizEstudiante[2];
-            
+
 
             return estudiante;
         }
@@ -68,7 +68,7 @@ namespace DAL
             return estudiantes;
         }
 
-        public List<Estudiante> FiltrarVoto(string voto)
+        public List<Estudiante> FiltrarActivo(string voto)
         {
 
             List<Estudiante> estudiantes = ConsultarTodos();
@@ -79,7 +79,7 @@ namespace DAL
             return estudiantesFiltradas;
         }
 
-        public List<Estudiante> FiltrarNoVoto(string voto)
+        public List<Estudiante> FiltrarInactivo(string voto)
         {
 
             List<Estudiante> estudiantes = ConsultarTodos();
@@ -99,15 +99,15 @@ namespace DAL
             return estudiantesFiltradasBuscado;
         }
 
-        public int TotalizarVotos()
+        public int TaotalizarEstado()
         {
             return ConsultarTodos().Count();
-        }
-        public int ContarSiVotos()
+        }       
+        public int ContarActivos()
         {
             return ConsultarTodos().Where(p => p.Estado == "AC").Count();
         }
-        public int ContarNoVotos()
+        public int ContarInactivos()
         {
             return ConsultarTodos().Where(p => p.Estado == "IN").Count();
         }

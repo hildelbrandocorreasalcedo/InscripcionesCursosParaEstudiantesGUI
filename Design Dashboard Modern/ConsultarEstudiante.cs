@@ -24,39 +24,25 @@ namespace Design_Dashboard_Modern
         {
             var response = estudianteService.ConsultarTodos();
             LlenarDtg(response);
-            TxtTotal.Text = estudianteService.TotalizarVotos().ToString();
+            TxtTotal.Text = estudianteService.TotalizarEstado().ToString();
         }
 
-        private void ConsultarFiltrarVoto()
+        private void ConsultarFiltrarActivos()
         {
 
-            var response = estudianteService.ConsultarSiVoto(CmbFiltro.Text);
+            var response = estudianteService.ConsultarActivo(CmbFiltro.Text);
             LlenarDtg(response);
-            TxtConteoVotaron.Text = estudianteService.ContarSiVotos().ToString();
+            TxtConteoActivos.Text = estudianteService.ContarActivos().ToString();
 
         }
 
-        private void ConsultarFiltrarNoVoto()
+        private void ConsultarFiltrarInactivos()
         {
-            var response = estudianteService.ConsultarNoVoto(CmbFiltro.Text);
+            var response = estudianteService.ConsultarInactivo(CmbFiltro.Text);
             LlenarDtg(response);
-            TxtConteoNoVotaron.Text = estudianteService.ContarNoVotos().ToString();
+            TxtConteoInactivos.Text = estudianteService.ContarInactivos().ToString();
         }
-        private void BuscarDtg()
-        {
-            var response = estudianteService.BuscarDtg(TxtIdentificacion.Text);
-            if (response != null)
-            {
-                EstudianteResponse respuesta = estudianteService.BuscarPorIdentificacion(TxtIdentificacion.Text);
-                Estudiante estudiante = respuesta.Estudiante;
-                if (estudiante == null)
-                {
-                    var Messg = estudianteService.ConsultaNoEncontradaIdentificacion();
-                    MessageBox.Show(Messg.Message);
-                }
-                LlenarDtg(response);
-            }
-        }
+       
 
         private void LlenarDtg(ConsultaEstudianteResponse response)
         {
@@ -151,13 +137,19 @@ namespace Design_Dashboard_Modern
             }
             else if (CmbFiltro.Text.Equals("IN"))
             {
-                ConsultarFiltrarNoVoto();
+                ConsultarFiltrarInactivos();
             }
             else
             {
-                ConsultarFiltrarVoto();
+                ConsultarFiltrarActivos();
             }
         }
+
+        private void BtCancelar_Click_1(object sender, EventArgs e)
+        {
+
+            this.Dispose();
+        }
     }
-    }
+    
 }

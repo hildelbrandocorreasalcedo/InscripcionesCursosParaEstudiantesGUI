@@ -39,6 +39,9 @@ namespace Design_Dashboard_Modern
             this.TxtConteoInactivos = new System.Windows.Forms.TextBox();
             this.TxtConteoActivos = new System.Windows.Forms.TextBox();
             this.DtgEstudiante = new System.Windows.Forms.DataGridView();
+            this.Identificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuGradientPanel4 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.BtCancelar = new System.Windows.Forms.Button();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -46,9 +49,6 @@ namespace Design_Dashboard_Modern
             this.CmbFiltro = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Identificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DtgEstudiante)).BeginInit();
             this.bunifuGradientPanel4.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -127,6 +127,22 @@ namespace Design_Dashboard_Modern
             this.DtgEstudiante.Size = new System.Drawing.Size(572, 356);
             this.DtgEstudiante.TabIndex = 80;
             // 
+            // Identificacion
+            // 
+            this.Identificacion.HeaderText = "Identificacion";
+            this.Identificacion.Name = "Identificacion";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MaxInputLength = 42767;
+            this.Nombre.Name = "Nombre";
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            // 
             // bunifuGradientPanel4
             // 
             this.bunifuGradientPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel4.BackgroundImage")));
@@ -154,6 +170,7 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.TabIndex = 13;
             this.BtCancelar.Text = "CANCELAR";
             this.BtCancelar.UseVisualStyleBackColor = false;
+            this.BtCancelar.Click += new System.EventHandler(this.BtCancelar_Click_1);
             // 
             // bunifuGradientPanel1
             // 
@@ -211,8 +228,8 @@ namespace Design_Dashboard_Modern
             this.CmbFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbFiltro.FormattingEnabled = true;
             this.CmbFiltro.Items.AddRange(new object[] {
-            "SI",
-            "NO",
+            "AC",
+            "IN",
             "TODOS"});
             this.CmbFiltro.Location = new System.Drawing.Point(491, 89);
             this.CmbFiltro.Name = "CmbFiltro";
@@ -240,22 +257,6 @@ namespace Design_Dashboard_Modern
             this.label1.Size = new System.Drawing.Size(447, 44);
             this.label1.TabIndex = 73;
             this.label1.Text = "CONSULTA ESTUDIANTES";
-            // 
-            // Identificacion
-            // 
-            this.Identificacion.HeaderText = "Identificacion";
-            this.Identificacion.Name = "Identificacion";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.MaxInputLength = 42767;
-            this.Nombre.Name = "Nombre";
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
             // 
             // ConsultarEstudiante
             // 

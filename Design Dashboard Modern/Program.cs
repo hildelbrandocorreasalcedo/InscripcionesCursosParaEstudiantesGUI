@@ -18,7 +18,7 @@ namespace ProyectoHotelPensionados
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run (new MenuHotel());
+        
             if (File.Exists("Estudiante.txt"))
             {
                 Application.Run(new MenuHotel());
