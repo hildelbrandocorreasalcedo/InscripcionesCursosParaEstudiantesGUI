@@ -11,6 +11,117 @@ namespace DAL
     public class EstudianteRepository
     {
         private readonly string FileName = "Estudiante.txt";
+        private readonly string FileNameCursos = "Curso.txt";
+
+        public IList<Cursos> cursos;
+        public EstudianteRepository()
+        {
+            cursos = new List<Cursos>();
+        }
+
+        public void GuardarCandidato(Cursos curso)
+        {
+
+            FileStream file = new FileStream(FileNameCursos, FileMode.Append);
+            StreamWriter writer = new StreamWriter(file);
+            writer.WriteLine($"{curso.Codigo};{curso.Nombre};{curso.CupoTotal};{curso.CupoDisponible}");
+            writer.Close();
+            file.Close();
+        }
+
+        public IList<Cursos> ConsultarTodosCursos()
+        {
+            FileStream fileStream = new FileStream(FileNameCursos, FileMode.OpenOrCreate);
+            StreamReader lector = new StreamReader(fileStream);
+            string linea = string.Empty;
+            while ((linea = lector.ReadLine()) != null)
+            {
+                Cursos curso = MapearCandidato(linea);
+                cursos.Add(curso);
+            }
+            lector.Close();
+            fileStream.Close();
+            return cursos;
+        }
+        public List<Cursos> ConsultarTodosCursoDtg()
+        {
+            List<Cursos> cursos = new List<Cursos>();
+            FileStream fileStream = new FileStream(FileNameCursos, FileMode.OpenOrCreate, FileAccess.Read);
+            StreamReader lector = new StreamReader(fileStream);
+            string linea = string.Empty;
+            while ((linea = lector.ReadLine()) != null)
+            {
+                Cursos curso = MapearCandidato(linea);
+                cursos.Add(curso);
+            }
+            lector.Close();
+            fileStream.Close();
+            return cursos;
+        }
+
+        public Cursos MapearCandidato(string linea)
+        {
+            Cursos curso = new Curso();
+            string[] datos = linea.Split(';');
+            curso.Codigo = datos[0];
+            curso.Nombre = datos[1];
+            curso.CupoTotal = int.Parse(datos[2]);
+            curso.CupoDisponible = int.Parse(datos[3]);
+            return curso;
+        }
+
+
+        public void EliminarCandidato(string codigo)
+        {
+            cursos.Clear();
+            cursos = ConsultarTodosCursos();
+            FileStream fileStream = new FileStream(FileNameCursos, FileMode.Create);
+            fileStream.Close();
+            foreach (var item in cursos)
+            {
+                if (item.NumeroTarjeton != codigo)
+                {
+                    GuardarCandidato(item);
+                }
+            }
+        }
+
+        public void ModificarCandidato(Cursos candidato)
+        {
+            cursos.Clear();
+            cursos = ConsultarTodosCursos();
+            FileStream fileStream = new FileStream(FileNameCursos, FileMode.Create);
+            fileStream.Close();
+            foreach (var item in cursos)
+            {
+                if (item.NumeroTarjeton != candidato.NumeroTarjeton)
+                {
+                    GuardarCandidato(item);
+                }
+                else
+                {
+                    GuardarCandidato(candidato);
+                }
+            }
+        }
+
+        public Cursos BuscarCandidato(string numeroTarjeton)
+        {
+            cursos.Clear();
+            cursos = ConsultarTodosCursos();
+            Cursos curso = new Curso();
+            foreach (var item in cursos)
+            {
+                if (item.NumeroTarjeton.Equals(numeroTarjeton))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+        //////////////////////////////////------------------------///////////////////////////////////////
+        /////////////////////////////////------Estudiantes-------///////////////////////////////////////
+        ////////////////////////////////------------------------///////////////////////////////////////
         public void Guardar(Estudiante estudiante)
         {
 

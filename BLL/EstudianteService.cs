@@ -11,11 +11,158 @@ namespace BLL
     public class EstudianteService
     {
         private readonly EstudianteRepository estudianteRepository;
-
+        private readonly EstudianteRepository CursoRepository;
         public EstudianteService()
         {
-            estudianteRepository = new EstudianteRepository();     
+            estudianteRepository = new EstudianteRepository();
+            CursoRepository = new EstudianteRepository();
         }
+
+        public string GuardarCandidato(Candidatos candidato)
+        {
+            try
+            {
+                if (CandidatoRepository.BuscarCandidato(candidato.NumeroTarjeton) == null)
+                {
+                    CandidatoRepository.GuardarCandidato(candidato);
+                    return "Los Datos han sido guardados satisfactoriamente";
+                }
+                return $"El Numero de Tarjeton {candidato.NumeroTarjeton} ya se encuentra registrada por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+                return "Error de Datos: " + e.Message;
+            }
+        }
+
+        public string EliminarCandidato(string numeroTarjeton)
+        {
+            try
+            {
+                if (CandidatoRepository.BuscarCandidato(numeroTarjeton) != null)
+                {
+                    CandidatoRepository.EliminarCandidato(numeroTarjeton);
+                    return $"El candidato con numero de tarjeton {numeroTarjeton} ha sido eliminada satisfacatoriamente";
+                }
+                return $"El numero de tarjeton {numeroTarjeton} no se encuentra registrada, por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+
+                return "Error de datos" + e.Message;
+            }
+        }
+
+        public string ModificarCandidato(Candidatos candidato)
+        {
+            try
+            {
+                if (CandidatoRepository.BuscarCandidato(candidato.NumeroTarjeton) != null)
+                {
+
+                    CandidatoRepository.ModificarCandidato(candidato);
+                    return $"El candidato con numero de tarjeton {candidato.NumeroTarjeton} ha sido modificada satisfacatoriamente";
+                }
+                return $"El numero de tarjeton {candidato.NumeroTarjeton} no se encuentra registrada, por favor verifique los datos";
+            }
+            catch (Exception e)
+            {
+                return "Error de datos" + e.Message;
+            }
+        }
+        public RespuestaBusqueda BuscarCandidato(string NumeroTarjeton)
+        {
+            RespuestaBusqueda respuesta = new RespuestaBusqueda();
+            try
+            {
+                respuesta.Error = false;
+                Candidatos candidato = CandidatoRepository.BuscarCandidato(NumeroTarjeton);
+                if (candidato == null)
+                {
+                    respuesta.Mensaje = $"El candidato con numero de tarjeton {NumeroTarjeton} no se encuentra registrado";
+                    respuesta.Curso = null;
+                }
+                else
+                {
+                    respuesta.Curso = candidato;
+                    respuesta.Mensaje = "Candidato encontrado\n\n";
+                }
+            }
+            catch (Exception E)
+            {
+                respuesta.Mensaje = "Error de lectura o escritura de archivos: " + E.Message;
+                respuesta.Curso = null;
+                respuesta.Error = true;
+            }
+            return respuesta;
+        }
+
+        public RespuestaConsulta ConsultarTodosCandidatos()
+        {
+            RespuestaConsulta respuesta = new RespuestaConsulta();
+            try
+            {
+                respuesta.Error = false;
+                IList<Candidatos> Candidatoss = CandidatoRepository.ConsultarTodosCandidatos();
+                if (Candidatoss.Count != 0)
+                {
+                    respuesta.Mensaje = "Se Consulta la Informacion de candidatos";
+                    respuesta.Cursos = Candidatoss;
+                }
+                else
+                {
+                    respuesta.Mensaje = "No existen Datos para Consultar";
+                    respuesta.Cursos = null;
+                }
+            }
+            catch (Exception e)
+            {
+                respuesta.Error = true;
+                respuesta.Mensaje = $"Erro en datos: " + e.Message;
+                respuesta.Cursos = null;
+            }
+            return respuesta;
+        }
+
+        public ConsultaCandidatoResponse ConsultarTodosCandidatosDtg()
+        {
+            try
+            {
+                List<Candidatos> candidato = CandidatoRepository.ConsultarTodosCandidatosDtg();
+                if (candidato != null)
+                {
+                    return new ConsultaCandidatoResponse(candidato);
+                }
+                else
+                {
+                    return new ConsultaCandidatoResponse("El candidato buscado no se encuentra Registrado");
+                }
+            }
+            catch (Exception e)
+            {
+
+                return new ConsultaCandidatoResponse("Error de Aplicacion: " + e.Message);
+            }
+        }
+
+        public class ConsultaCandidatoResponse
+        {
+            public List<Candidatos> Candidato { get; set; }
+            public string Message { get; set; }
+
+            public ConsultaCandidatoResponse(List<Candidatos> candidato)
+            {
+                Candidato = new List<Candidatos>();
+                Candidato = candidato;
+            }
+            public ConsultaCandidatoResponse(string message)
+            {
+                Message = message;
+            }
+        }
+        //////////////////////////////////------------------------///////////////////////////////////////
+        /////////////////////////////////------Estudiantes-------///////////////////////////////////////
+        ////////////////////////////////------------------------///////////////////////////////////////
         public string Guardar(Estudiante estudiante)
         {
             try
