@@ -102,7 +102,7 @@ namespace DAL
         public int TaotalizarEstado()
         {
             return ConsultarTodos().Count();
-        }       
+        }
         public int ContarActivos()
         {
             return ConsultarTodos().Where(p => p.Estado == "AC").Count();
