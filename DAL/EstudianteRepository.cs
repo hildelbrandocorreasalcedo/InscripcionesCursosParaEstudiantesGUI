@@ -1,10 +1,7 @@
-﻿using System;
+﻿using ENTITY;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ENTITY;
 using System.IO;
+using System.Linq;
 
 namespace DAL
 {
@@ -19,7 +16,7 @@ namespace DAL
             cursos = new List<Cursos>();
         }
 
-        public void GuardarCandidato(Cursos curso)
+        public void GuardarCurso(Cursos curso)
         {
 
             FileStream file = new FileStream(FileNameCursos, FileMode.Append);
@@ -29,14 +26,14 @@ namespace DAL
             file.Close();
         }
 
-        public IList<Cursos> ConsultarTodosCursos()
+        public IList<Cursos> ConsultarTodosCurso()
         {
             FileStream fileStream = new FileStream(FileNameCursos, FileMode.OpenOrCreate);
             StreamReader lector = new StreamReader(fileStream);
             string linea = string.Empty;
             while ((linea = lector.ReadLine()) != null)
             {
-                Cursos curso = MapearCandidato(linea);
+                Cursos curso = MapearCurso(linea);
                 cursos.Add(curso);
             }
             lector.Close();
@@ -51,7 +48,7 @@ namespace DAL
             string linea = string.Empty;
             while ((linea = lector.ReadLine()) != null)
             {
-                Cursos curso = MapearCandidato(linea);
+                Cursos curso = MapearCurso(linea);
                 cursos.Add(curso);
             }
             lector.Close();
@@ -59,7 +56,7 @@ namespace DAL
             return cursos;
         }
 
-        public Cursos MapearCandidato(string linea)
+        public Cursos MapearCurso(string linea)
         {
             Cursos curso = new Curso();
             string[] datos = linea.Split(';');
@@ -71,48 +68,48 @@ namespace DAL
         }
 
 
-        public void EliminarCandidato(string codigo)
+        public void EliminarCurso(string codigo)
         {
             cursos.Clear();
-            cursos = ConsultarTodosCursos();
+            cursos = ConsultarTodosCurso();
             FileStream fileStream = new FileStream(FileNameCursos, FileMode.Create);
             fileStream.Close();
             foreach (var item in cursos)
             {
-                if (item.NumeroTarjeton != codigo)
+                if (item.Codigo != codigo)
                 {
-                    GuardarCandidato(item);
+                    GuardarCurso(item);
                 }
             }
         }
 
-        public void ModificarCandidato(Cursos candidato)
+        public void ModificarCurso(Cursos curso)
         {
             cursos.Clear();
-            cursos = ConsultarTodosCursos();
+            cursos = ConsultarTodosCurso();
             FileStream fileStream = new FileStream(FileNameCursos, FileMode.Create);
             fileStream.Close();
             foreach (var item in cursos)
             {
-                if (item.NumeroTarjeton != candidato.NumeroTarjeton)
+                if (item.Codigo != curso.Codigo)
                 {
-                    GuardarCandidato(item);
+                    GuardarCurso(item);
                 }
                 else
                 {
-                    GuardarCandidato(candidato);
+                    GuardarCurso(curso);
                 }
             }
         }
 
-        public Cursos BuscarCandidato(string numeroTarjeton)
+        public Cursos BuscarCurso(string codigo)
         {
             cursos.Clear();
-            cursos = ConsultarTodosCursos();
+            cursos = ConsultarTodosCurso();
             Cursos curso = new Curso();
             foreach (var item in cursos)
             {
-                if (item.NumeroTarjeton.Equals(numeroTarjeton))
+                if (item.NumeroTarjeton.Equals(codigo))
                 {
                     return item;
                 }

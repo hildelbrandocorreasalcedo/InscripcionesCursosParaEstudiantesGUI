@@ -18,16 +18,16 @@ namespace BLL
             CursoRepository = new EstudianteRepository();
         }
 
-        public string GuardarCandidato(Candidatos candidato)
+        public string GuardarCurso(Candidatos curso)
         {
             try
             {
-                if (CandidatoRepository.BuscarCandidato(candidato.NumeroTarjeton) == null)
+                if (CursoRepository.BuscarCurso(curso.Codigo) == null)
                 {
-                    CandidatoRepository.GuardarCandidato(candidato);
+                    CandidatoRepository.GuardarCandidato(curso);
                     return "Los Datos han sido guardados satisfactoriamente";
                 }
-                return $"El Numero de Tarjeton {candidato.NumeroTarjeton} ya se encuentra registrada por favor verifique los datos";
+                return $"El Codigo{curso.NumeroTarjeton} ya se encuentra registrada por favor verifique los datos";
             }
             catch (Exception e)
             {
@@ -35,16 +35,16 @@ namespace BLL
             }
         }
 
-        public string EliminarCandidato(string numeroTarjeton)
+        public string EliminarCurso(string codigo)
         {
             try
             {
-                if (CandidatoRepository.BuscarCandidato(numeroTarjeton) != null)
+                if (CursoRepository.BuscarCurso(codigo) != null)
                 {
-                    CandidatoRepository.EliminarCandidato(numeroTarjeton);
-                    return $"El candidato con numero de tarjeton {numeroTarjeton} ha sido eliminada satisfacatoriamente";
+                    CursoRepository.EliminarCurso(codigo);
+                    return $"El curso con codigo {codigo} ha sido eliminada satisfacatoriamente";
                 }
-                return $"El numero de tarjeton {numeroTarjeton} no se encuentra registrada, por favor verifique los datos";
+                return $"El codigo{codigo} no se encuentra registrada, por favor verifique los datos";
             }
             catch (Exception e)
             {
@@ -53,39 +53,39 @@ namespace BLL
             }
         }
 
-        public string ModificarCandidato(Candidatos candidato)
+        public string ModificarCurso(Candidatos curso)
         {
             try
             {
-                if (CandidatoRepository.BuscarCandidato(candidato.NumeroTarjeton) != null)
+                if (CursoRepository.BuscarCurso(curso.Codigo) != null)
                 {
 
-                    CandidatoRepository.ModificarCandidato(candidato);
-                    return $"El candidato con numero de tarjeton {candidato.NumeroTarjeton} ha sido modificada satisfacatoriamente";
+                    CursoRepository.ModificarCurso(curso);
+                    return $"El curso con codigo {curso.NumeroTarjeton} ha sido modificada satisfacatoriamente";
                 }
-                return $"El numero de tarjeton {candidato.NumeroTarjeton} no se encuentra registrada, por favor verifique los datos";
+                return $"El codigo {curso.Codigo} no se encuentra registrada, por favor verifique los datos";
             }
             catch (Exception e)
             {
                 return "Error de datos" + e.Message;
             }
         }
-        public RespuestaBusqueda BuscarCandidato(string NumeroTarjeton)
+        public RespuestaBusqueda BuscarCurso(string Codigo)
         {
             RespuestaBusqueda respuesta = new RespuestaBusqueda();
             try
             {
                 respuesta.Error = false;
-                Candidatos candidato = CandidatoRepository.BuscarCandidato(NumeroTarjeton);
-                if (candidato == null)
+                Cursos curso = CursoRepository.BuscarCurso(Codigo);
+                if (curso == null)
                 {
-                    respuesta.Mensaje = $"El candidato con numero de tarjeton {NumeroTarjeton} no se encuentra registrado";
+                    respuesta.Mensaje = $"El Curso con Codigo {Codigo} no se encuentra registrado";
                     respuesta.Curso = null;
                 }
                 else
                 {
-                    respuesta.Curso = candidato;
-                    respuesta.Mensaje = "Candidato encontrado\n\n";
+                    respuesta.Curso = curso;
+                    respuesta.Mensaje = "Curso encontrado\n\n";
                 }
             }
             catch (Exception E)
@@ -97,17 +97,17 @@ namespace BLL
             return respuesta;
         }
 
-        public RespuestaConsulta ConsultarTodosCandidatos()
+        public RespuestaConsulta ConsultarTodosCurso()
         {
             RespuestaConsulta respuesta = new RespuestaConsulta();
             try
             {
                 respuesta.Error = false;
-                IList<Candidatos> Candidatoss = CandidatoRepository.ConsultarTodosCandidatos();
-                if (Candidatoss.Count != 0)
+                IList<Cursos> Cursoss = CursoRepository.ConsultarTodosCurso();
+                if (Cursoss.Count != 0)
                 {
                     respuesta.Mensaje = "Se Consulta la Informacion de candidatos";
-                    respuesta.Cursos = Candidatoss;
+                    respuesta.Cursos = Cursoss;
                 }
                 else
                 {
@@ -124,18 +124,18 @@ namespace BLL
             return respuesta;
         }
 
-        public ConsultaCandidatoResponse ConsultarTodosCandidatosDtg()
+        public ConsultaCandidatoResponse ConsultarTodosCursoDtg()
         {
             try
             {
-                List<Candidatos> candidato = CandidatoRepository.ConsultarTodosCandidatosDtg();
-                if (candidato != null)
+                List<Cursos> curso = CursoRepository.ConsultarTodosCursoDtg();
+                if (curso != null)
                 {
-                    return new ConsultaCandidatoResponse(candidato);
+                    return new ConsultaCandidatoResponse(curso);
                 }
                 else
                 {
-                    return new ConsultaCandidatoResponse("El candidato buscado no se encuentra Registrado");
+                    return new ConsultaCandidatoResponse("El Curso buscado no se encuentra Registrado");
                 }
             }
             catch (Exception e)
@@ -147,13 +147,13 @@ namespace BLL
 
         public class ConsultaCandidatoResponse
         {
-            public List<Candidatos> Candidato { get; set; }
+            public List<Cursos> Curso { get; set; }
             public string Message { get; set; }
 
-            public ConsultaCandidatoResponse(List<Candidatos> candidato)
+            public ConsultaCandidatoResponse(List<Cursos> curso)
             {
-                Candidato = new List<Candidatos>();
-                Candidato = candidato;
+                Curso = new List<Cursos>();
+                Curso = curso;
             }
             public ConsultaCandidatoResponse(string message)
             {
