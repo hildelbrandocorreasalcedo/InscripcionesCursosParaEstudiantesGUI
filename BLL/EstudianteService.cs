@@ -18,16 +18,16 @@ namespace BLL
             CursoRepository = new EstudianteRepository();
         }
 
-        public string GuardarCurso(Candidatos curso)
+        public string GuardarCurso(Cursos curso)
         {
             try
             {
                 if (CursoRepository.BuscarCurso(curso.Codigo) == null)
                 {
-                    CandidatoRepository.GuardarCandidato(curso);
+                    CursoRepository.GuardarCurso(curso);
                     return "Los Datos han sido guardados satisfactoriamente";
                 }
-                return $"El Codigo{curso.NumeroTarjeton} ya se encuentra registrada por favor verifique los datos";
+                return $"El Codigo{curso.Codigo} ya se encuentra registrada por favor verifique los datos";
             }
             catch (Exception e)
             {
@@ -53,7 +53,7 @@ namespace BLL
             }
         }
 
-        public string ModificarCurso(Candidatos curso)
+        public string ModificarCurso(Cursos curso)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace BLL
                 {
 
                     CursoRepository.ModificarCurso(curso);
-                    return $"El curso con codigo {curso.NumeroTarjeton} ha sido modificada satisfacatoriamente";
+                    return $"El curso con codigo {curso.Codigo} ha sido modificada satisfacatoriamente";
                 }
                 return $"El codigo {curso.Codigo} no se encuentra registrada, por favor verifique los datos";
             }

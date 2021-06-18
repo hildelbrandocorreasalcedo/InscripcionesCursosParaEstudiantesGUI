@@ -7,15 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ENTITY;
+using BLL;
 
 namespace Design_Dashboard_Modern
 {
     public partial class RegistroCursos : Form
     {
+        EstudianteService CursoService = new EstudianteService();
         public RegistroCursos()
         {
             InitializeComponent();
         }
+
+        private void BorrarMensajesErrorIdentificacion()
+        {
+            errorProvider1.SetError(TxtCodigo, "");
+
+        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -46,42 +56,25 @@ namespace Design_Dashboard_Modern
                 ok = false;
                 errorProvider1.SetError(TxtNombre, "Por Favor Ingrese los Nombres");
             }           
-            if (TxtIdentificacion.Text == "")
+            if (TxtCodigo.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(TxtIdentificacion, "Por Favor Ingrese La Identificación");
+                errorProvider1.SetError(TxtCodigo, "Por Favor Ingrese La Codigo");
             }
-            if (TxtApellido.Text == "")
+            if (TxtCupoTotal.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(TxtApellido, "Por Favor Ingrese Los Apellidos");
-            }
-            if (TxtTelefono.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(TxtTelefono, "Este Campo Es Obligatorio");
-            }
-            if (CmbSexo.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(CmbSexo, "Esta Selección Es Obligatoria");
-            }
-            if (CombCarrera.Text == "")
-            {
-                ok = false;
-                errorProvider1.SetError(CombCarrera, "Esta Selección Es Obligatoria");
+                errorProvider1.SetError(TxtCupoTotal, "Este Campo Es Obligatorio");
             }
             return ok;
         }
 
         private void BorrarMensajesError()
         {
-            errorProvider1.SetError(CmbSexo, "");
-            errorProvider1.SetError(CombCarrera, "");
-            errorProvider1.SetError(TxtIdentificacion, "");
+            errorProvider1.SetError(TxtCodigo, "");
             errorProvider1.SetError(TxtNombre, "");
-            errorProvider1.SetError(TxtTelefono, "");
-            errorProvider1.SetError(TxtApellido, "");
+            errorProvider1.SetError(TxtCupoTotal, "");
+            
         }
 
         private void ButCancelar_Click(object sender, EventArgs e)
@@ -92,19 +85,19 @@ namespace Design_Dashboard_Modern
         private void TxtIdentificacion_TextChanged(object sender, EventArgs e)
         {
             int numero;
-            if (!int.TryParse(TxtIdentificacion.Text, out numero))
+            if (!int.TryParse(TxtCodigo.Text, out numero))
             {
-                errorProvider1.SetError(TxtIdentificacion, "Ingrese Solo Numeros");
+                errorProvider1.SetError(TxtCodigo, "Ingrese Solo Numeros");
             }
             else
             {
-                errorProvider1.SetError(TxtIdentificacion, "");
+                errorProvider1.SetError(TxtCodigo, "");
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            errorProvider1.SetError(CombCarrera, "");
+            
         }
 
         private void txtedad_TextChanged(object sender, EventArgs e)
@@ -125,13 +118,13 @@ namespace Design_Dashboard_Modern
         private void TxtTelefono_TextChanged(object sender, EventArgs e)
         {
             int numero;
-            if (!int.TryParse(TxtTelefono.Text, out numero))
+            if (!int.TryParse(TxtCupoTotal.Text, out numero))
             {
-                errorProvider1.SetError(TxtTelefono, "Ingrese Solo Numeros");
+                errorProvider1.SetError(TxtCupoTotal, "Ingrese Solo Numeros");
             }
             else
             {
-                errorProvider1.SetError(TxtTelefono, "");
+                errorProvider1.SetError(TxtCupoTotal, "");
             }
         }
 
@@ -157,7 +150,7 @@ namespace Design_Dashboard_Modern
 
         private void CmbSexo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            errorProvider1.SetError(CmbSexo, "");
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -215,26 +208,92 @@ namespace Design_Dashboard_Modern
             BorrarMensajesError();
             if (validarcampos())
             {
-                MessageBox.Show("Se Registraron los datos Correctamente");
+                Cursos curso = MapearCurso();
+                string mensaje = CursoService.GuardarCurso(curso);
+                MessageBox.Show(mensaje);
+                LimpiarTxt();
             }
+        }
+        private Cursos MapearCurso()
+        {
+            Cursos curso = new Cursos();
+            curso.Codigo = TxtCodigo.Text;
+            curso.Nombre = TxtNombre.Text;
+            curso.CupoTotal = int.Parse(TxtCupoTotal.Text);
+            curso.CupoDisponible = int.Parse(TxtCupoDisponible.Text);
+            return curso;
         }
 
         private void BtModificar_Click(object sender, EventArgs e)
         {
-            BorrarMensajesError();
-            if (validarcampos())
-            {
-                MessageBox.Show("Se Modificaron los datos Correctamente");
-            }
+            
         }
 
         private void BtEliminar_Click(object sender, EventArgs e)
         {
-            BorrarMensajesError();
+            BorrarMensajesErrorIdentificacion();
             if (validarcampos())
             {
-                MessageBox.Show("Se Eliminaron los datos Correctamente");
+                string codigo = TxtCodigo.Text;
+                if (codigo != "")
+                {
+                    RespuestaBusqueda respuesta = CursoService.BuscarCurso(codigo);
+                    if (respuesta.Curso != null)
+                    {
+                        codigo = TxtCodigo.Text;
+                        var mensaje = CursoService.EliminarCurso(codigo);
+                        MessageBox.Show(mensaje, "Confirmacion de ELiminado", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"El curso con el codigo {codigo} no se encuentra registrado");
+                    }
+                }
+                LimpiarTxt();
             }
+        }
+
+        private void BtLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarTxt();
+        }
+        private void LimpiarTxt()
+        {
+            TxtCodigo.Text = "";
+            TxtNombre.Text = "";
+            TxtCupoDisponible.Text = "0";
+            TxtCupoTotal.Text = "";
+        }
+
+        private void BtConsultar_Click(object sender, EventArgs e)
+        {
+            string codigo = TxtCodigo.Text;
+            if (codigo != "")
+            {
+                RespuestaBusqueda respuesta = CursoService.BuscarCurso(codigo);
+
+                if (respuesta.Curso != null)
+                {
+                    Cursos curso = respuesta.Curso;
+                    TxtNombre.Text = curso.Nombre;
+                    TxtCupoTotal.Text = curso.CupoTotal.ToString();
+                    TxtCupoDisponible.Text = curso.CupoDisponible.ToString();
+                    MessageBox.Show(respuesta.Mensaje);
+                }
+                else
+                {
+                    MessageBox.Show(respuesta.Mensaje);
+                }
+            }
+            else
+            {
+                MessageBox.Show("digite el codigo a buscar");
+            }
+        }
+
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(TxtNombre, "");
         }
     }
 }

@@ -58,7 +58,7 @@ namespace DAL
 
         public Cursos MapearCurso(string linea)
         {
-            Cursos curso = new Curso();
+            Cursos curso = new Cursos();
             string[] datos = linea.Split(';');
             curso.Codigo = datos[0];
             curso.Nombre = datos[1];
@@ -106,10 +106,10 @@ namespace DAL
         {
             cursos.Clear();
             cursos = ConsultarTodosCurso();
-            Cursos curso = new Curso();
+            Cursos curso = new Cursos();
             foreach (var item in cursos)
             {
-                if (item.NumeroTarjeton.Equals(codigo))
+                if (item.Codigo.Equals(codigo))
                 {
                     return item;
                 }
