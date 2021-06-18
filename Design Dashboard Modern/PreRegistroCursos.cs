@@ -53,7 +53,7 @@ namespace Design_Dashboard_Modern
             var response = CursoService.ConsultarTodosCursoDtg();
             foreach (var item in response.Curso)
             {
-                DtgVotaciones.Rows.Add(item.Codigo, item.Nombre);
+                DtgVotaciones.Rows.Add(item.Codigo, item.Nombre, item.CupoTotal, item.CupoDisponible);
             }
         }
         private void ConsultarGanancias_Load(object sender, EventArgs e)
