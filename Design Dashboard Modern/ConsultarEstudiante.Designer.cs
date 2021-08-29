@@ -60,7 +60,7 @@ namespace Design_Dashboard_Modern
             this.TxtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTotal.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.TxtTotal.Location = new System.Drawing.Point(977, 244);
-            this.TxtTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.TxtTotal.Name = "TxtTotal";
             this.TxtTotal.Size = new System.Drawing.Size(87, 30);
             this.TxtTotal.TabIndex = 86;
@@ -106,7 +106,7 @@ namespace Design_Dashboard_Modern
             this.TxtConteoInactivos.Enabled = false;
             this.TxtConteoInactivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtConteoInactivos.Location = new System.Drawing.Point(977, 357);
-            this.TxtConteoInactivos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtConteoInactivos.Margin = new System.Windows.Forms.Padding(4);
             this.TxtConteoInactivos.Name = "TxtConteoInactivos";
             this.TxtConteoInactivos.Size = new System.Drawing.Size(87, 30);
             this.TxtConteoInactivos.TabIndex = 82;
@@ -116,7 +116,7 @@ namespace Design_Dashboard_Modern
             this.TxtConteoActivos.Enabled = false;
             this.TxtConteoActivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtConteoActivos.Location = new System.Drawing.Point(977, 302);
-            this.TxtConteoActivos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtConteoActivos.Margin = new System.Windows.Forms.Padding(4);
             this.TxtConteoActivos.Name = "TxtConteoActivos";
             this.TxtConteoActivos.Size = new System.Drawing.Size(87, 30);
             this.TxtConteoActivos.TabIndex = 81;
@@ -129,7 +129,7 @@ namespace Design_Dashboard_Modern
             this.Nombre,
             this.Estado});
             this.DtgEstudiante.Location = new System.Drawing.Point(24, 170);
-            this.DtgEstudiante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DtgEstudiante.Margin = new System.Windows.Forms.Padding(4);
             this.DtgEstudiante.Name = "DtgEstudiante";
             this.DtgEstudiante.RowHeadersWidth = 51;
             this.DtgEstudiante.Size = new System.Drawing.Size(763, 438);
@@ -167,7 +167,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.bunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.bunifuGradientPanel4.Location = new System.Drawing.Point(816, 554);
-            this.bunifuGradientPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel4.Name = "bunifuGradientPanel4";
             this.bunifuGradientPanel4.Quality = 10;
             this.bunifuGradientPanel4.Size = new System.Drawing.Size(207, 54);
@@ -180,7 +180,7 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.ForeColor = System.Drawing.Color.White;
             this.BtCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtCancelar.Location = new System.Drawing.Point(7, 0);
-            this.BtCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.BtCancelar.Name = "BtCancelar";
             this.BtCancelar.Size = new System.Drawing.Size(193, 54);
             this.BtCancelar.TabIndex = 13;
@@ -198,10 +198,10 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(811, 90);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(185, 54);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(212, 54);
             this.bunifuGradientPanel1.TabIndex = 77;
             // 
             // BtConsultar
@@ -210,7 +210,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.BackColor = System.Drawing.Color.Transparent;
             this.BtConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtConsultar.BorderRadius = 0;
-            this.BtConsultar.ButtonText = " CONSULTAR";
+            this.BtConsultar.ButtonText = "                  CONSULTAR";
             this.BtConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtConsultar.DisabledColor = System.Drawing.Color.Gray;
             this.BtConsultar.Iconcolor = System.Drawing.Color.Transparent;
@@ -226,15 +226,15 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.IconZoom = 80D;
             this.BtConsultar.IsTab = false;
             this.BtConsultar.Location = new System.Drawing.Point(4, 1);
-            this.BtConsultar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BtConsultar.Margin = new System.Windows.Forms.Padding(5);
             this.BtConsultar.Name = "BtConsultar";
             this.BtConsultar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtConsultar.OnHovercolor = System.Drawing.Color.Blue;
             this.BtConsultar.OnHoverTextColor = System.Drawing.Color.White;
             this.BtConsultar.selected = false;
-            this.BtConsultar.Size = new System.Drawing.Size(177, 53);
+            this.BtConsultar.Size = new System.Drawing.Size(203, 53);
             this.BtConsultar.TabIndex = 28;
-            this.BtConsultar.Text = " CONSULTAR";
+            this.BtConsultar.Text = "                  CONSULTAR";
             this.BtConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultar.Textcolor = System.Drawing.Color.White;
             this.BtConsultar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -250,7 +250,7 @@ namespace Design_Dashboard_Modern
             "IN",
             "TODOS"});
             this.CmbFiltro.Location = new System.Drawing.Point(655, 110);
-            this.CmbFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CmbFiltro.Margin = new System.Windows.Forms.Padding(4);
             this.CmbFiltro.Name = "CmbFiltro";
             this.CmbFiltro.Size = new System.Drawing.Size(147, 33);
             this.CmbFiltro.TabIndex = 76;
@@ -297,7 +297,7 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.CmbFiltro);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConsultarEstudiante";
             this.Text = "RESERVA";
             this.Load += new System.EventHandler(this.Reserva_Load);

@@ -69,7 +69,7 @@ namespace Design_Dashboard_Modern
             this.PanelColor.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.PanelColor.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.PanelColor.Location = new System.Drawing.Point(672, 225);
-            this.PanelColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelColor.Margin = new System.Windows.Forms.Padding(4);
             this.PanelColor.Name = "PanelColor";
             this.PanelColor.Quality = 10;
             this.PanelColor.Size = new System.Drawing.Size(351, 292);
@@ -80,7 +80,7 @@ namespace Design_Dashboard_Modern
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(5, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(339, 284);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -98,7 +98,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel6.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.bunifuGradientPanel6.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.bunifuGradientPanel6.Location = new System.Drawing.Point(637, 95);
-            this.bunifuGradientPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel6.Name = "bunifuGradientPanel6";
             this.bunifuGradientPanel6.Quality = 10;
             this.bunifuGradientPanel6.Size = new System.Drawing.Size(73, 54);
@@ -126,7 +126,7 @@ namespace Design_Dashboard_Modern
             this.BtLimpiar.IconZoom = 80D;
             this.BtLimpiar.IsTab = false;
             this.BtLimpiar.Location = new System.Drawing.Point(0, 1);
-            this.BtLimpiar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BtLimpiar.Margin = new System.Windows.Forms.Padding(5);
             this.BtLimpiar.Name = "BtLimpiar";
             this.BtLimpiar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtLimpiar.OnHovercolor = System.Drawing.Color.Blue;
@@ -149,7 +149,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel5.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.bunifuGradientPanel5.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.bunifuGradientPanel5.Location = new System.Drawing.Point(540, 95);
-            this.bunifuGradientPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel5.Name = "bunifuGradientPanel5";
             this.bunifuGradientPanel5.Quality = 10;
             this.bunifuGradientPanel5.Size = new System.Drawing.Size(73, 54);
@@ -177,7 +177,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.IconZoom = 80D;
             this.BtConsultar.IsTab = false;
             this.BtConsultar.Location = new System.Drawing.Point(1, 2);
-            this.BtConsultar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BtConsultar.Margin = new System.Windows.Forms.Padding(5);
             this.BtConsultar.Name = "BtConsultar";
             this.BtConsultar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtConsultar.OnHovercolor = System.Drawing.Color.Blue;
@@ -207,7 +207,7 @@ namespace Design_Dashboard_Modern
             this.TxtNombre.Enabled = false;
             this.TxtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombre.Location = new System.Drawing.Point(243, 167);
-            this.TxtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(467, 30);
             this.TxtNombre.TabIndex = 61;
@@ -228,7 +228,7 @@ namespace Design_Dashboard_Modern
             // 
             this.TxtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCodigo.Location = new System.Drawing.Point(243, 117);
-            this.TxtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(279, 30);
             this.TxtCodigo.TabIndex = 59;
@@ -243,7 +243,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.bunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.bunifuGradientPanel4.Location = new System.Drawing.Point(816, 556);
-            this.bunifuGradientPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel4.Name = "bunifuGradientPanel4";
             this.bunifuGradientPanel4.Quality = 10;
             this.bunifuGradientPanel4.Size = new System.Drawing.Size(207, 54);
@@ -256,7 +256,7 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.ForeColor = System.Drawing.Color.White;
             this.BtCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtCancelar.Location = new System.Drawing.Point(7, 0);
-            this.BtCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.BtCancelar.Name = "BtCancelar";
             this.BtCancelar.Size = new System.Drawing.Size(193, 54);
             this.BtCancelar.TabIndex = 13;
@@ -274,7 +274,7 @@ namespace Design_Dashboard_Modern
             this.BaseRegistroVoto.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.BaseRegistroVoto.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.BaseRegistroVoto.Location = new System.Drawing.Point(184, 529);
-            this.BaseRegistroVoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BaseRegistroVoto.Margin = new System.Windows.Forms.Padding(4);
             this.BaseRegistroVoto.Name = "BaseRegistroVoto";
             this.BaseRegistroVoto.Quality = 10;
             this.BaseRegistroVoto.Size = new System.Drawing.Size(247, 54);
@@ -286,7 +286,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarVoto.BackColor = System.Drawing.Color.Transparent;
             this.BtRegistrarVoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtRegistrarVoto.BorderRadius = 0;
-            this.BtRegistrarVoto.ButtonText = "REGISTRAR CURSO";
+            this.BtRegistrarVoto.ButtonText = "                REGISTRAR CURSO";
             this.BtRegistrarVoto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtRegistrarVoto.DisabledColor = System.Drawing.Color.Gray;
             this.BtRegistrarVoto.Iconcolor = System.Drawing.Color.Transparent;
@@ -302,7 +302,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarVoto.IconZoom = 80D;
             this.BtRegistrarVoto.IsTab = false;
             this.BtRegistrarVoto.Location = new System.Drawing.Point(5, 1);
-            this.BtRegistrarVoto.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BtRegistrarVoto.Margin = new System.Windows.Forms.Padding(5);
             this.BtRegistrarVoto.Name = "BtRegistrarVoto";
             this.BtRegistrarVoto.Normalcolor = System.Drawing.Color.Transparent;
             this.BtRegistrarVoto.OnHovercolor = System.Drawing.Color.Blue;
@@ -310,7 +310,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarVoto.selected = false;
             this.BtRegistrarVoto.Size = new System.Drawing.Size(237, 53);
             this.BtRegistrarVoto.TabIndex = 28;
-            this.BtRegistrarVoto.Text = "REGISTRAR CURSO";
+            this.BtRegistrarVoto.Text = "                REGISTRAR CURSO";
             this.BtRegistrarVoto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRegistrarVoto.Textcolor = System.Drawing.Color.White;
             this.BtRegistrarVoto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -336,7 +336,7 @@ namespace Design_Dashboard_Modern
             this.CupoTotal,
             this.CupoDisponble});
             this.DtgVotaciones.Location = new System.Drawing.Point(35, 229);
-            this.DtgVotaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DtgVotaciones.Margin = new System.Windows.Forms.Padding(4);
             this.DtgVotaciones.Name = "DtgVotaciones";
             this.DtgVotaciones.RowHeadersWidth = 51;
             this.DtgVotaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -388,7 +388,7 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.BaseRegistroVoto);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DtgVotaciones);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PreRegistroCursos";
             this.Text = "Consultar Ganancias";
             this.Load += new System.EventHandler(this.ConsultarGanancias_Load);

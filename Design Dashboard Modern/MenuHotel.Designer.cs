@@ -31,8 +31,8 @@ namespace Design_Dashboard_Modern
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuHotel));
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation16 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation15 = new BunifuAnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.MenuSidebar = new System.Windows.Forms.PictureBox();
@@ -92,7 +92,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebarBack.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1508, 92);
             this.panel1.TabIndex = 0;
@@ -116,7 +116,7 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1508, 92);
@@ -129,7 +129,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
             this.MenuSidebar.Image = ((System.Drawing.Image)(resources.GetObject("MenuSidebar.Image")));
             this.MenuSidebar.Location = new System.Drawing.Point(25, 17);
-            this.MenuSidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MenuSidebar.Margin = new System.Windows.Forms.Padding(4);
             this.MenuSidebar.Name = "MenuSidebar";
             this.MenuSidebar.Size = new System.Drawing.Size(67, 54);
             this.MenuSidebar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,7 +160,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.Salir, BunifuAnimatorNS.DecorationType.None);
             this.Salir.Image = ((System.Drawing.Image)(resources.GetObject("Salir.Image")));
             this.Salir.Location = new System.Drawing.Point(1452, 26);
-            this.Salir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Salir.Margin = new System.Windows.Forms.Padding(4);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(40, 37);
             this.Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,7 +176,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.Maximizar, BunifuAnimatorNS.DecorationType.None);
             this.Maximizar.Image = ((System.Drawing.Image)(resources.GetObject("Maximizar.Image")));
             this.Maximizar.Location = new System.Drawing.Point(1404, 26);
-            this.Maximizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Maximizar.Margin = new System.Windows.Forms.Padding(4);
             this.Maximizar.Name = "Maximizar";
             this.Maximizar.Size = new System.Drawing.Size(40, 37);
             this.Maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +192,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.Restaurar, BunifuAnimatorNS.DecorationType.None);
             this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
             this.Restaurar.Location = new System.Drawing.Point(1404, 26);
-            this.Restaurar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Restaurar.Margin = new System.Windows.Forms.Padding(4);
             this.Restaurar.Name = "Restaurar";
             this.Restaurar.Size = new System.Drawing.Size(40, 37);
             this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,7 +208,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(119, 7);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(96, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,7 +223,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.Minimizar, BunifuAnimatorNS.DecorationType.None);
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
             this.Minimizar.Location = new System.Drawing.Point(1356, 26);
-            this.Minimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Minimizar.Margin = new System.Windows.Forms.Padding(4);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(40, 37);
             this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -241,7 +241,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.PanelHijo, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.PanelHijo, BunifuAnimatorNS.DecorationType.None);
             this.PanelHijo.Location = new System.Drawing.Point(8, 14);
-            this.PanelHijo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelHijo.Margin = new System.Windows.Forms.Padding(4);
             this.PanelHijo.Name = "PanelHijo";
             this.PanelHijo.Size = new System.Drawing.Size(1111, 681);
             this.PanelHijo.TabIndex = 4;
@@ -254,10 +254,10 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebarBack.SetDecoration(this.pictureBox3, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.pictureBox3, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(380, 181);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(380, 191);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(384, 320);
+            this.pictureBox3.Size = new System.Drawing.Size(384, 309);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
@@ -281,7 +281,7 @@ namespace Design_Dashboard_Modern
             this.Sidebar.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.Sidebar.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
             this.Sidebar.Location = new System.Drawing.Point(15, 14);
-            this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Quality = 10;
             this.Sidebar.Size = new System.Drawing.Size(347, 681);
@@ -296,7 +296,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(163, 46);
+            this.label3.Location = new System.Drawing.Point(150, 46);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 29);
@@ -313,7 +313,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.PanelSideMenu, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this.PanelSideMenu, BunifuAnimatorNS.DecorationType.None);
             this.PanelSideMenu.Location = new System.Drawing.Point(9, 160);
-            this.PanelSideMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.PanelSideMenu.Name = "PanelSideMenu";
             this.PanelSideMenu.Size = new System.Drawing.Size(327, 514);
             this.PanelSideMenu.TabIndex = 2;
@@ -324,7 +324,7 @@ namespace Design_Dashboard_Modern
             this.BtIngrGast.BackColor = System.Drawing.Color.Transparent;
             this.BtIngrGast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtIngrGast.BorderRadius = 0;
-            this.BtIngrGast.ButtonText = "      INGRESOS Y GASTOS";
+            this.BtIngrGast.ButtonText = "                         CURSOS INSCRITOS";
             this.BtIngrGast.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebarBack.SetDecoration(this.BtIngrGast, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.BtIngrGast, BunifuAnimatorNS.DecorationType.None);
@@ -335,12 +335,12 @@ namespace Design_Dashboard_Modern
             this.BtIngrGast.Iconimage_right = null;
             this.BtIngrGast.Iconimage_right_Selected = null;
             this.BtIngrGast.Iconimage_Selected = null;
-            this.BtIngrGast.IconMarginLeft = 2;
+            this.BtIngrGast.IconMarginLeft = 9;
             this.BtIngrGast.IconMarginRight = 0;
             this.BtIngrGast.IconRightVisible = true;
             this.BtIngrGast.IconRightZoom = 0D;
             this.BtIngrGast.IconVisible = true;
-            this.BtIngrGast.IconZoom = 105D;
+            this.BtIngrGast.IconZoom = 90D;
             this.BtIngrGast.IsTab = false;
             this.BtIngrGast.Location = new System.Drawing.Point(0, 165);
             this.BtIngrGast.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -351,7 +351,7 @@ namespace Design_Dashboard_Modern
             this.BtIngrGast.selected = false;
             this.BtIngrGast.Size = new System.Drawing.Size(327, 57);
             this.BtIngrGast.TabIndex = 19;
-            this.BtIngrGast.Text = "      INGRESOS Y GASTOS";
+            this.BtIngrGast.Text = "                         CURSOS INSCRITOS";
             this.BtIngrGast.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtIngrGast.Textcolor = System.Drawing.Color.LightGray;
             this.BtIngrGast.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -363,7 +363,7 @@ namespace Design_Dashboard_Modern
             this.BtReservas.BackColor = System.Drawing.Color.Transparent;
             this.BtReservas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtReservas.BorderRadius = 0;
-            this.BtReservas.ButtonText = "         REGISTRO CURSOS";
+            this.BtReservas.ButtonText = "                        REGISTRO CURSOS";
             this.BtReservas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebarBack.SetDecoration(this.BtReservas, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.BtReservas, BunifuAnimatorNS.DecorationType.None);
@@ -375,15 +375,15 @@ namespace Design_Dashboard_Modern
             this.BtReservas.Iconimage_right = null;
             this.BtReservas.Iconimage_right_Selected = null;
             this.BtReservas.Iconimage_Selected = null;
-            this.BtReservas.IconMarginLeft = 14;
+            this.BtReservas.IconMarginLeft = 9;
             this.BtReservas.IconMarginRight = 0;
             this.BtReservas.IconRightVisible = true;
             this.BtReservas.IconRightZoom = 0D;
             this.BtReservas.IconVisible = true;
-            this.BtReservas.IconZoom = 40D;
+            this.BtReservas.IconZoom = 75D;
             this.BtReservas.IsTab = false;
             this.BtReservas.Location = new System.Drawing.Point(0, 108);
-            this.BtReservas.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BtReservas.Margin = new System.Windows.Forms.Padding(5);
             this.BtReservas.Name = "BtReservas";
             this.BtReservas.Normalcolor = System.Drawing.Color.Transparent;
             this.BtReservas.OnHovercolor = System.Drawing.Color.Blue;
@@ -391,7 +391,7 @@ namespace Design_Dashboard_Modern
             this.BtReservas.selected = false;
             this.BtReservas.Size = new System.Drawing.Size(327, 57);
             this.BtReservas.TabIndex = 18;
-            this.BtReservas.Text = "         REGISTRO CURSOS";
+            this.BtReservas.Text = "                        REGISTRO CURSOS";
             this.BtReservas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtReservas.Textcolor = System.Drawing.Color.LightGray;
             this.BtReservas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -405,7 +405,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebarBack.SetDecoration(this.panelSubPensionados, BunifuAnimatorNS.DecorationType.None);
             this.panelSubPensionados.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubPensionados.Location = new System.Drawing.Point(0, 0);
-            this.panelSubPensionados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSubPensionados.Margin = new System.Windows.Forms.Padding(4);
             this.panelSubPensionados.Name = "panelSubPensionados";
             this.panelSubPensionados.Size = new System.Drawing.Size(327, 108);
             this.panelSubPensionados.TabIndex = 2;
@@ -421,7 +421,7 @@ namespace Design_Dashboard_Modern
             this.BtConsultarPensionado.Image = ((System.Drawing.Image)(resources.GetObject("BtConsultarPensionado.Image")));
             this.BtConsultarPensionado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtConsultarPensionado.Location = new System.Drawing.Point(0, 53);
-            this.BtConsultarPensionado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtConsultarPensionado.Margin = new System.Windows.Forms.Padding(4);
             this.BtConsultarPensionado.Name = "BtConsultarPensionado";
             this.BtConsultarPensionado.Size = new System.Drawing.Size(327, 52);
             this.BtConsultarPensionado.TabIndex = 3;
@@ -439,7 +439,7 @@ namespace Design_Dashboard_Modern
             this.BtRegistrarPencionado.Image = ((System.Drawing.Image)(resources.GetObject("BtRegistrarPencionado.Image")));
             this.BtRegistrarPencionado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtRegistrarPencionado.Location = new System.Drawing.Point(0, 0);
-            this.BtRegistrarPencionado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtRegistrarPencionado.Margin = new System.Windows.Forms.Padding(4);
             this.BtRegistrarPencionado.Name = "BtRegistrarPencionado";
             this.BtRegistrarPencionado.Size = new System.Drawing.Size(327, 53);
             this.BtRegistrarPencionado.TabIndex = 2;
@@ -453,7 +453,7 @@ namespace Design_Dashboard_Modern
             this.BTPensionados.BackColor = System.Drawing.Color.Transparent;
             this.BTPensionados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BTPensionados.BorderRadius = 0;
-            this.BTPensionados.ButtonText = "        ESTUDIANTE";
+            this.BTPensionados.ButtonText = "                        ESTUDIANTE";
             this.BTPensionados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimacionSidebarBack.SetDecoration(this.BTPensionados, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.BTPensionados, BunifuAnimatorNS.DecorationType.None);
@@ -465,15 +465,15 @@ namespace Design_Dashboard_Modern
             this.BTPensionados.Iconimage_right = null;
             this.BTPensionados.Iconimage_right_Selected = null;
             this.BTPensionados.Iconimage_Selected = null;
-            this.BTPensionados.IconMarginLeft = 16;
+            this.BTPensionados.IconMarginLeft = 9;
             this.BTPensionados.IconMarginRight = 0;
             this.BTPensionados.IconRightVisible = true;
             this.BTPensionados.IconRightZoom = 0D;
             this.BTPensionados.IconVisible = true;
-            this.BTPensionados.IconZoom = 60D;
+            this.BTPensionados.IconZoom = 75D;
             this.BTPensionados.IsTab = false;
             this.BTPensionados.Location = new System.Drawing.Point(11, 101);
-            this.BTPensionados.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BTPensionados.Margin = new System.Windows.Forms.Padding(5);
             this.BTPensionados.Name = "BTPensionados";
             this.BTPensionados.Normalcolor = System.Drawing.Color.Transparent;
             this.BTPensionados.OnHovercolor = System.Drawing.Color.Blue;
@@ -481,7 +481,7 @@ namespace Design_Dashboard_Modern
             this.BTPensionados.selected = false;
             this.BTPensionados.Size = new System.Drawing.Size(325, 57);
             this.BTPensionados.TabIndex = 20;
-            this.BTPensionados.Text = "        ESTUDIANTE";
+            this.BTPensionados.Text = "                        ESTUDIANTE";
             this.BTPensionados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTPensionados.Textcolor = System.Drawing.Color.LightGray;
             this.BTPensionados.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
@@ -495,7 +495,7 @@ namespace Design_Dashboard_Modern
             this.LineaSidebar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.LineaSidebar.LineThickness = 1;
             this.LineaSidebar.Location = new System.Drawing.Point(9, 84);
-            this.LineaSidebar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.LineaSidebar.Margin = new System.Windows.Forms.Padding(5);
             this.LineaSidebar.Name = "LineaSidebar";
             this.LineaSidebar.Size = new System.Drawing.Size(313, 1);
             this.LineaSidebar.TabIndex = 7;
@@ -510,7 +510,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(109, 16);
+            this.label4.Location = new System.Drawing.Point(101, 16);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(232, 29);
@@ -524,7 +524,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(8, 5);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(84, 73);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -539,7 +539,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebarBack.SetDecoration(this.SidebarWrapper, BunifuAnimatorNS.DecorationType.None);
             this.SidebarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
             this.SidebarWrapper.Location = new System.Drawing.Point(0, 92);
-            this.SidebarWrapper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SidebarWrapper.Margin = new System.Windows.Forms.Padding(4);
             this.SidebarWrapper.Name = "SidebarWrapper";
             this.SidebarWrapper.Size = new System.Drawing.Size(373, 709);
             this.SidebarWrapper.TabIndex = 20;
@@ -552,7 +552,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebarBack.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(373, 92);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1135, 709);
             this.panel3.TabIndex = 21;
@@ -587,43 +587,43 @@ namespace Design_Dashboard_Modern
             // 
             this.AnimacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimacionSidebarBack.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.AnimacionSidebarBack.DefaultAnimation = animation1;
+            animation16.AnimateOnlyDifferences = true;
+            animation16.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.BlindCoeff")));
+            animation16.LeafCoeff = 0F;
+            animation16.MaxTime = 1F;
+            animation16.MinTime = 0F;
+            animation16.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicCoeff")));
+            animation16.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicShift")));
+            animation16.MosaicSize = 0;
+            animation16.Padding = new System.Windows.Forms.Padding(0);
+            animation16.RotateCoeff = 0F;
+            animation16.RotateLimit = 0F;
+            animation16.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.ScaleCoeff")));
+            animation16.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.SlideCoeff")));
+            animation16.TimeCoeff = 0F;
+            animation16.TransparencyCoeff = 0F;
+            this.AnimacionSidebarBack.DefaultAnimation = animation16;
             // 
             // AnimacionSidebar
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.AnimacionSidebar.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 1;
-            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 2F;
-            animation2.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation2;
+            animation15.AnimateOnlyDifferences = true;
+            animation15.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.BlindCoeff")));
+            animation15.LeafCoeff = 0F;
+            animation15.MaxTime = 1F;
+            animation15.MinTime = 0F;
+            animation15.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicCoeff")));
+            animation15.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicShift")));
+            animation15.MosaicSize = 1;
+            animation15.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation15.RotateCoeff = 0F;
+            animation15.RotateLimit = 0F;
+            animation15.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.ScaleCoeff")));
+            animation15.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.SlideCoeff")));
+            animation15.TimeCoeff = 2F;
+            animation15.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation15;
             // 
             // MenuHotel
             // 
@@ -636,7 +636,7 @@ namespace Design_Dashboard_Modern
             this.AnimacionSidebar.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebarBack.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuHotel";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
