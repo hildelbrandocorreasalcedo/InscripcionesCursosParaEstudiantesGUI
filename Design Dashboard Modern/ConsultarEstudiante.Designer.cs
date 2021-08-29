@@ -59,9 +59,10 @@ namespace Design_Dashboard_Modern
             this.TxtTotal.Enabled = false;
             this.TxtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTotal.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TxtTotal.Location = new System.Drawing.Point(733, 198);
+            this.TxtTotal.Location = new System.Drawing.Point(977, 244);
+            this.TxtTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtTotal.Name = "TxtTotal";
-            this.TxtTotal.Size = new System.Drawing.Size(66, 26);
+            this.TxtTotal.Size = new System.Drawing.Size(87, 30);
             this.TxtTotal.TabIndex = 86;
             // 
             // label5
@@ -69,9 +70,10 @@ namespace Design_Dashboard_Modern
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(631, 204);
+            this.label5.Location = new System.Drawing.Point(841, 251);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 20);
+            this.label5.Size = new System.Drawing.Size(84, 25);
             this.label5.TabIndex = 85;
             this.label5.Text = "TOTAL ";
             // 
@@ -80,9 +82,10 @@ namespace Design_Dashboard_Modern
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(631, 296);
+            this.label4.Location = new System.Drawing.Point(841, 364);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 20);
+            this.label4.Size = new System.Drawing.Size(122, 25);
             this.label4.TabIndex = 84;
             this.label4.Text = "INACTIVOS";
             // 
@@ -91,9 +94,10 @@ namespace Design_Dashboard_Modern
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(631, 251);
+            this.label3.Location = new System.Drawing.Point(841, 309);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
+            this.label3.Size = new System.Drawing.Size(103, 25);
             this.label3.TabIndex = 83;
             this.label3.Text = "ACTIVOS";
             // 
@@ -101,18 +105,20 @@ namespace Design_Dashboard_Modern
             // 
             this.TxtConteoInactivos.Enabled = false;
             this.TxtConteoInactivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtConteoInactivos.Location = new System.Drawing.Point(733, 290);
+            this.TxtConteoInactivos.Location = new System.Drawing.Point(977, 357);
+            this.TxtConteoInactivos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtConteoInactivos.Name = "TxtConteoInactivos";
-            this.TxtConteoInactivos.Size = new System.Drawing.Size(66, 26);
+            this.TxtConteoInactivos.Size = new System.Drawing.Size(87, 30);
             this.TxtConteoInactivos.TabIndex = 82;
             // 
             // TxtConteoActivos
             // 
             this.TxtConteoActivos.Enabled = false;
             this.TxtConteoActivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtConteoActivos.Location = new System.Drawing.Point(733, 245);
+            this.TxtConteoActivos.Location = new System.Drawing.Point(977, 302);
+            this.TxtConteoActivos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtConteoActivos.Name = "TxtConteoActivos";
-            this.TxtConteoActivos.Size = new System.Drawing.Size(66, 26);
+            this.TxtConteoActivos.Size = new System.Drawing.Size(87, 30);
             this.TxtConteoActivos.TabIndex = 81;
             // 
             // DtgEstudiante
@@ -122,26 +128,34 @@ namespace Design_Dashboard_Modern
             this.Identificacion,
             this.Nombre,
             this.Estado});
-            this.DtgEstudiante.Location = new System.Drawing.Point(18, 138);
+            this.DtgEstudiante.Location = new System.Drawing.Point(24, 170);
+            this.DtgEstudiante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DtgEstudiante.Name = "DtgEstudiante";
-            this.DtgEstudiante.Size = new System.Drawing.Size(572, 356);
+            this.DtgEstudiante.RowHeadersWidth = 51;
+            this.DtgEstudiante.Size = new System.Drawing.Size(763, 438);
             this.DtgEstudiante.TabIndex = 80;
             // 
             // Identificacion
             // 
             this.Identificacion.HeaderText = "Identificacion";
+            this.Identificacion.MinimumWidth = 6;
             this.Identificacion.Name = "Identificacion";
+            this.Identificacion.Width = 125;
             // 
             // Nombre
             // 
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.MaxInputLength = 42767;
+            this.Nombre.MinimumWidth = 6;
             this.Nombre.Name = "Nombre";
+            this.Nombre.Width = 125;
             // 
             // Estado
             // 
             this.Estado.HeaderText = "Estado";
+            this.Estado.MinimumWidth = 6;
             this.Estado.Name = "Estado";
+            this.Estado.Width = 125;
             // 
             // bunifuGradientPanel4
             // 
@@ -149,13 +163,14 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel4.Controls.Add(this.BtCancelar);
             this.bunifuGradientPanel4.GradientBottomLeft = System.Drawing.Color.Blue;
-            this.bunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.DarkViolet;
-            this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.bunifuGradientPanel4.GradientBottomRight = System.Drawing.Color.Aqua;
+            this.bunifuGradientPanel4.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.bunifuGradientPanel4.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.bunifuGradientPanel4.Location = new System.Drawing.Point(612, 450);
+            this.bunifuGradientPanel4.Location = new System.Drawing.Point(816, 554);
+            this.bunifuGradientPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel4.Name = "bunifuGradientPanel4";
             this.bunifuGradientPanel4.Quality = 10;
-            this.bunifuGradientPanel4.Size = new System.Drawing.Size(155, 44);
+            this.bunifuGradientPanel4.Size = new System.Drawing.Size(207, 54);
             this.bunifuGradientPanel4.TabIndex = 79;
             // 
             // BtCancelar
@@ -164,9 +179,10 @@ namespace Design_Dashboard_Modern
             this.BtCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtCancelar.ForeColor = System.Drawing.Color.White;
             this.BtCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtCancelar.Location = new System.Drawing.Point(5, 0);
+            this.BtCancelar.Location = new System.Drawing.Point(7, 0);
+            this.BtCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtCancelar.Name = "BtCancelar";
-            this.BtCancelar.Size = new System.Drawing.Size(145, 44);
+            this.BtCancelar.Size = new System.Drawing.Size(193, 54);
             this.BtCancelar.TabIndex = 13;
             this.BtCancelar.Text = "CANCELAR";
             this.BtCancelar.UseVisualStyleBackColor = false;
@@ -178,13 +194,14 @@ namespace Design_Dashboard_Modern
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.Controls.Add(this.BtConsultar);
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Blue;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkViolet;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(21)))), ((int)(((byte)(80)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Aqua;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.DarkBlue;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(608, 73);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(811, 90);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(139, 44);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(185, 54);
             this.bunifuGradientPanel1.TabIndex = 77;
             // 
             // BtConsultar
@@ -208,13 +225,14 @@ namespace Design_Dashboard_Modern
             this.BtConsultar.IconVisible = true;
             this.BtConsultar.IconZoom = 80D;
             this.BtConsultar.IsTab = false;
-            this.BtConsultar.Location = new System.Drawing.Point(3, 1);
+            this.BtConsultar.Location = new System.Drawing.Point(4, 1);
+            this.BtConsultar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.BtConsultar.Name = "BtConsultar";
             this.BtConsultar.Normalcolor = System.Drawing.Color.Transparent;
             this.BtConsultar.OnHovercolor = System.Drawing.Color.Blue;
             this.BtConsultar.OnHoverTextColor = System.Drawing.Color.White;
             this.BtConsultar.selected = false;
-            this.BtConsultar.Size = new System.Drawing.Size(133, 43);
+            this.BtConsultar.Size = new System.Drawing.Size(177, 53);
             this.BtConsultar.TabIndex = 28;
             this.BtConsultar.Text = " CONSULTAR";
             this.BtConsultar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,9 +249,10 @@ namespace Design_Dashboard_Modern
             "AC",
             "IN",
             "TODOS"});
-            this.CmbFiltro.Location = new System.Drawing.Point(491, 89);
+            this.CmbFiltro.Location = new System.Drawing.Point(655, 110);
+            this.CmbFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CmbFiltro.Name = "CmbFiltro";
-            this.CmbFiltro.Size = new System.Drawing.Size(111, 28);
+            this.CmbFiltro.Size = new System.Drawing.Size(147, 33);
             this.CmbFiltro.TabIndex = 76;
             // 
             // label7
@@ -241,9 +260,10 @@ namespace Design_Dashboard_Modern
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(429, 97);
+            this.label7.Location = new System.Drawing.Point(572, 119);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 20);
+            this.label7.Size = new System.Drawing.Size(50, 25);
             this.label7.TabIndex = 75;
             this.label7.Text = "Fitro";
             // 
@@ -252,18 +272,19 @@ namespace Design_Dashboard_Modern
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(195, 20);
+            this.label1.Location = new System.Drawing.Point(260, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(447, 44);
+            this.label1.Size = new System.Drawing.Size(555, 55);
             this.label1.TabIndex = 73;
             this.label1.Text = "CONSULTA ESTUDIANTES";
             // 
             // ConsultarEstudiante
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(817, 514);
+            this.ClientSize = new System.Drawing.Size(1089, 633);
             this.Controls.Add(this.TxtTotal);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -276,6 +297,7 @@ namespace Design_Dashboard_Modern
             this.Controls.Add(this.CmbFiltro);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ConsultarEstudiante";
             this.Text = "RESERVA";
             this.Load += new System.EventHandler(this.Reserva_Load);
